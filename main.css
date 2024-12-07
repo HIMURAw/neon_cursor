@@ -1,0 +1,39 @@
+body,
+html,
+#app {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#app {
+  overflow: hidden;
+  touch-action: pan-up;
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 10px #ffffff, 0 0 30px #000000, 0 0 50px #000012;
+}
+
+#app h1 {
+  --fontSize: 60px;
+  --lineheight: 80px;
+  width: auto;
+  height: calc(2 * var(--lineheight));
+  line-height: var(--lineheight);
+  margin: calc(50vh - var(--lineheight) auto 0);
+  font-size: var(--fontSize);
+}
+
+#app a {
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#app canvas {
+  display: block;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+}
